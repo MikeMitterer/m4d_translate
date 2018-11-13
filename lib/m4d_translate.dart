@@ -4,14 +4,8 @@
 library m4d_translate;
 
 import 'dart:html' as dom;
-import 'dart:async';
 
 import 'package:logging/logging.dart';
-import 'package:validate/validate.dart';
-
-import 'package:intl/intl.dart';
-import 'package:intl/intl_browser.dart';
-import 'package:intl/date_symbol_data_local.dart';
 
 import 'package:l10n/l10n.dart';
 

@@ -40,6 +40,6 @@ main() async {
         CoreComponentsModule(), TranslationModule()
     ]).bind(coreService.Application).to(Application(locale));
 
-    final Application app = await componentHandler().run();
+    final Application app = await componentHandler().upgrade();
     app.run();
 }
