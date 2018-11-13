@@ -1,0 +1,9 @@
+{
+   "@@last_modified": "2018-11-13T08:28:46.401824",
+   "@@locale": "de",
+   "Translate me": "Übersetze mich",
+   "@Translate me": {
+      "type": "text",
+      "placeholders": {}
+   }
+}

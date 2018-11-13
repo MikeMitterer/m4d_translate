@@ -1,0 +1,15 @@
+# Rsync-Destination für dieses sample
+#
+#   - ssh ls2
+#   - cat ~/website/config/nginx/_template.conf.txt | sed -e 's/%example%/m4d_translate/' > ~/website/config/nginx/m4d_translate.conf
+#   - cat ~/website/config/nginx/m4d_translate.conf
+#   - sudo mkdir -p ~/website/data/example/m4d_translate
+#   - sudo chown ubuntu:ubuntu ~/website/data/example/m4d_translate
+#   - sudo chmod 775 ~/website/data/example/m4d_translate
+#   - echo 'm4d_translate' > ~/website/data/example/m4d_translate/index.html
+#   - ls -lad ~/website/data/example/m4d_translate
+#   - cd ~/website && docker-compose restart
+#
+RSYNC_DESTINATION=":~/website/data/example/m4d_translate/"
+EXAMPLE_URL="http://m4d_translate.example.mikemitterer.at/"
+
