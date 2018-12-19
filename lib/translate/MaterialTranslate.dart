@@ -32,7 +32,7 @@ class MaterialTranslate extends MdlComponent {
 
     String _idToTranslate = "";
 
-    MaterialTranslate.fromElement(final dom.HtmlElement element,final ioc.IOCContainer iocContainer)
+    MaterialTranslate.fromElement(final dom.HtmlElement element,final ioc.Container iocContainer)
         : super(element,iocContainer) {
 
         _init();
@@ -121,7 +121,7 @@ class MaterialTranslate extends MdlComponent {
 void registerMaterialTranslate() {
     final MdlConfig config = new MdlConfig<MaterialTranslate>(
         _MaterialTranslateConstant.WIDGET_SELECTOR,
-            (final dom.HtmlElement element,final ioc.IOCContainer iocContainer)
+            (final dom.HtmlElement element,final ioc.Container iocContainer)
                 => new MaterialTranslate.fromElement(element,iocContainer)
     );
     

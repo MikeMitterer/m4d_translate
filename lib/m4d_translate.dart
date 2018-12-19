@@ -21,7 +21,7 @@ void registerM4DTranslationComponents() {
     registerMaterialTranslate();
 }
 
-class TranslationModule extends ioc.IOCModule {
+class TranslationModule extends ioc.Module {
     @override
     configure() {
         registerM4DTranslationComponents();

@@ -36,7 +36,7 @@ main() async {
     );
     (dom.querySelector("head") as dom.HeadElement).lang = locale;
 
-    ioc.IOCContainer.bindModules([
+    ioc.Container.bindModules([
         CoreComponentsModule(), TranslationModule()
     ]).bind(coreService.Application).to(Application(locale));
 
